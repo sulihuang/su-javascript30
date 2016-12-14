@@ -1,0 +1,63 @@
+html {
+  font-size: 10px;
+}
+
+html, body, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:url(http://i1.piimg.com/567571/1533a6841e688f92.jpg);
+  background-size:cover;
+  font-family:'helvetica neue';
+  text-align: center;
+}
+
+
+.clock {
+  position: relative;
+  margin:50px auto;
+  padding:2rem;
+  width: 30rem;
+  height: 30rem;
+  border:20px solid white;
+  border-radius:50%;
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); 
+}
+
+.hand {
+  position: absolute;
+  top:50%;
+  background:black;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  width:50%;
+  height:6px;
+}
+
+.min-hand {
+  width:50%;
+  height:4px;
+}     
+
+.second-hand {
+  width:50%;
+  height:2px;
+}
