@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Su CSS Variable</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Magic CSS Variables with <span class="hl"></span>JS</h1>
+
+  <div class="content">
+      <label for="spacing">Spacing:</label>
+      <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+      <label for="blur">Blur:</label>
+      <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+      <label for="base">Base Color</label>
+      <input type="color" name="base" value="#afc161">
+
+      <img src="http://p1.bpimg.com/567571/fab313a0b11d911f.png">
+  </div>
+  <script type="text/javascript" charset="utf-8">
+    const selects = document.querySelectorAll('.content input');
+
+    function handleUpdate() {
+      const suffix = this.dataset.sizing || '';
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+
+    selects.forEach(item => item.addEventListener('change', handleUpdate));
+    selects.forEach(item => item.addEventListener('mousemove', handleUpdate));
+  </script>
+</body>
+</html>
