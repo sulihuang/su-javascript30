@@ -21,6 +21,9 @@ body {
   font-size: 50px;
   text-align: center;
 }
+.hl {
+  color: var(--base);
+}
 .content {
   margin-bottom: 100px;
 }
