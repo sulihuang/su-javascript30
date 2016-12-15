@@ -4,6 +4,7 @@
 ### list
 #### [1.Su Drum Kit](https://github.com/sulihuang/su-javascript30/tree/master/Drum%20Kit)
 #### [2.Su Clock](https://github.com/sulihuang/su-javascript30/tree/master/Clock)
+#### [2.Su CSS Varialbe](https://github.com/sulihuang/su-javascript30/tree/master/03-CSS%20Variable)
 
 
 
